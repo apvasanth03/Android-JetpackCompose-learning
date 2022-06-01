@@ -28,6 +28,9 @@ android {
             )
         }
     }
+    buildFeatures {
+        compose = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -37,6 +40,9 @@ android {
             jvmTarget = "1.8"
         }
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Versions.compose
+    }
 }
 
 // Detekt Configuration.
@@ -45,6 +51,7 @@ detekt {
     source = files("src/main/java", "src/main/kotlin")
     config = files("${rootProject.projectDir}/config/detekt/detekt.yml")
     buildUponDefaultConfig = true
+    autoCorrect = true
 }
 
 dependencies {
@@ -56,6 +63,12 @@ dependencies {
     implementation(Deps.appCompat)
     implementation(Deps.materialDesign)
     implementation(Deps.constraintLayout)
+    implementation(Deps.navigationFragmentKtx)
+    implementation(Deps.navigationUIKtx)
+    implementation(Deps.composeUI)
+    implementation(Deps.composeUITooling)
+    implementation(Deps.composeFoundation)
+    implementation(Deps.composeMaterial)
 
     // Others
 
