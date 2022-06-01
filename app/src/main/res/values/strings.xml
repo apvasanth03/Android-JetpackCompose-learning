@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Jetpack Compose Learning</string>
+
+    <!-- Catalogue -->
+    <string name="catalogue">Catalogue</string>
+    <!-- End -->
 </resources>
