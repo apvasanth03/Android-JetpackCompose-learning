@@ -3,5 +3,12 @@
 
     <!-- Catalogue -->
     <string name="catalogue">Catalogue</string>
+    <string name="title_activity_compose_basics">ComposeBasicsActivity</string>
+    <!-- End -->
+
+    <!-- Compose Basic -->
+    <string name="compose_basic">Compose Basic</string>
+    <string name="show_less">Show less</string>
+    <string name="show_more">Show more</string>
     <!-- End -->
 </resources>

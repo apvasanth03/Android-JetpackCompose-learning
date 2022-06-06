@@ -19,12 +19,15 @@ object Deps {
     val materialDesign by lazy { "com.google.android.material:material:${Versions.material}" }
     val constraintLayout by lazy { "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}" }
     val coreKtx by lazy { "androidx.core:core-ktx:${Versions.coreKtx}" }
-    val navigationFragmentKtx by lazy { "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}" }
-    val navigationUIKtx by lazy { "androidx.navigation:navigation-ui-ktx:${Versions.navigation}" }
+    val activityCompose by lazy { "androidx.activity:activity-compose:${Versions.activity}" }
+    val lifecycleRuntimeKtx by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}" }
     val composeUI by lazy { "androidx.compose.ui:ui:${Versions.compose}" }
     val composeUITooling by lazy { "androidx.compose.ui:ui-tooling:${Versions.compose}" }
+    val composeUIToolingPreview by lazy { "androidx.compose.ui:ui-tooling-preview:${Versions.compose}" }
     val composeFoundation by lazy { "androidx.compose.foundation:foundation:${Versions.compose}" }
     val composeMaterial by lazy { "androidx.compose.material:material:${Versions.compose}" }
+    val composeMaterialIcons by lazy { "androidx.compose.material:material-icons-extended:${Versions.compose}" }
+
 
     // Others
     val detektFormatting by lazy { "io.gitlab.arturbosch.detekt:detekt-formatting:${Versions.detekt}" }

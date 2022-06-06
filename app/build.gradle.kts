@@ -17,6 +17,9 @@ android {
 
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
 
     buildTypes {
@@ -43,6 +46,9 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.compose
     }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 // Detekt Configuration.
@@ -63,12 +69,14 @@ dependencies {
     implementation(Deps.appCompat)
     implementation(Deps.materialDesign)
     implementation(Deps.constraintLayout)
-    implementation(Deps.navigationFragmentKtx)
-    implementation(Deps.navigationUIKtx)
+    implementation(Deps.lifecycleRuntimeKtx)
     implementation(Deps.composeUI)
     implementation(Deps.composeUITooling)
+    implementation(Deps.composeUIToolingPreview)
     implementation(Deps.composeFoundation)
     implementation(Deps.composeMaterial)
+    implementation(Deps.composeMaterialIcons)
+    implementation(Deps.activityCompose)
 
     // Others
 
