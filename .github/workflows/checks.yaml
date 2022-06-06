@@ -25,16 +25,3 @@ jobs:
 
       - name: Build project
         run: ./gradlew assembleDebug --stacktrace
-
-      - name: Detekt
-        run: ./gradlew detekt
-
-      - name: Lint
-        run: ./gradlew lint
-
-      - name: Upload build reports
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-reports
-          path: app/build/reports/
