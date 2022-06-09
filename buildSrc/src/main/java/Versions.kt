@@ -12,7 +12,7 @@ object Versions {
     const val coreKtx = "1.7.0"
     const val activity = "1.4.0"
     const val lifecycle = "2.4.1"
-    const val compose = "1.1.1"
+    const val compose = "1.2.0-alpha05"
 
 
     // Others
