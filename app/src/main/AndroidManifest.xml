@@ -23,6 +23,11 @@
             android:exported="false"
             android:label="@string/title_activity_compose_basics"
             android:theme="@style/Theme.JetpackComposeLearning" />
+        <activity
+            android:name=".ui.features.layout.BasicLayoutsActivity"
+            android:exported="false"
+            android:label="@string/my_soothe"
+            android:theme="@style/Theme.MySoothe" />
     </application>
 
 </manifest>

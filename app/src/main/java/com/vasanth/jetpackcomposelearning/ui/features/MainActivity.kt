@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.vasanth.jetpackcomposelearning.R
 import com.vasanth.jetpackcomposelearning.ui.common.theme.JetpackComposeLearningTheme
 import com.vasanth.jetpackcomposelearning.ui.features.basics.ComposeBasicsActivity
+import com.vasanth.jetpackcomposelearning.ui.features.layout.BasicLayoutsActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -69,15 +70,32 @@ class MainActivity : AppCompatActivity() {
         Column(
             modifier = Modifier.fillMaxSize()
         ) {
-            // 1. Compose Basic
-            Button(
-                onClick = { navigateToComposeBasicScreen() },
-                modifier = Modifier
-                    .padding(all = 8.dp)
-                    .fillMaxWidth()
-            ) {
-                Text(text = stringResource(id = R.string.compose_basic))
-            }
+            ComposeBasic()
+            BasicLayout()
+        }
+    }
+
+    @Composable
+    fun ComposeBasic() {
+        Button(
+            onClick = { navigateToComposeBasicScreen() },
+            modifier = Modifier
+                .padding(all = 8.dp)
+                .fillMaxWidth()
+        ) {
+            Text(text = stringResource(id = R.string.compose_basic))
+        }
+    }
+
+    @Composable
+    fun BasicLayout() {
+        Button(
+            onClick = { navigateToBasicLayoutScreen() },
+            modifier = Modifier
+                .padding(all = 8.dp)
+                .fillMaxWidth()
+        ) {
+            Text(text = stringResource(id = R.string.basic_layout))
         }
     }
     // endregion
@@ -85,6 +103,11 @@ class MainActivity : AppCompatActivity() {
     // region HelperMethods
     private fun navigateToComposeBasicScreen() {
         val intent = ComposeBasicsActivity.getIntent(this)
+        startActivity(intent)
+    }
+
+    private fun navigateToBasicLayoutScreen() {
+        val intent = BasicLayoutsActivity.getIntent(this)
         startActivity(intent)
     }
     // endregion
