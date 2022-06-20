@@ -28,6 +28,11 @@
             android:exported="false"
             android:label="@string/my_soothe"
             android:theme="@style/Theme.MySoothe" />
+        <activity
+            android:name=".ui.features.state.StateActivity"
+            android:exported="false"
+            android:label="@string/basic_state"
+            android:theme="@style/Theme.JetpackComposeLearning" />
     </application>
 
 </manifest>

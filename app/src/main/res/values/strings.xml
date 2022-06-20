@@ -33,6 +33,11 @@
     <string name="bottom_navigation_home">HOME</string>
     <string name="bottom_navigation_profile">PROFILE</string>
     <string name="placeholder_search">Search</string>
+    <string name="title_activity_state">StateActivity</string>
+    <!-- End -->
+
+    <!-- Basic State -->
+    <string name="basic_state">Basic State</string>
     <!-- End -->
 
 </resources>
