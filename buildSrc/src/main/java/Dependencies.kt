@@ -27,6 +27,7 @@ object Deps {
     val composeFoundation by lazy { "androidx.compose.foundation:foundation:${Versions.compose}" }
     val composeMaterial by lazy { "androidx.compose.material:material:${Versions.compose}" }
     val composeMaterialIcons by lazy { "androidx.compose.material:material-icons-extended:${Versions.compose}" }
+    val viewModelCompose by lazy { "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycle}" }
 
 
     // Others

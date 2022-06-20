@@ -20,6 +20,7 @@ import com.vasanth.jetpackcomposelearning.R
 import com.vasanth.jetpackcomposelearning.ui.common.theme.JetpackComposeLearningTheme
 import com.vasanth.jetpackcomposelearning.ui.features.basics.ComposeBasicsActivity
 import com.vasanth.jetpackcomposelearning.ui.features.layout.BasicLayoutsActivity
+import com.vasanth.jetpackcomposelearning.ui.features.state.StateActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -72,6 +73,7 @@ class MainActivity : AppCompatActivity() {
         ) {
             ComposeBasic()
             BasicLayout()
+            BasicState()
         }
     }
 
@@ -98,6 +100,18 @@ class MainActivity : AppCompatActivity() {
             Text(text = stringResource(id = R.string.basic_layout))
         }
     }
+
+    @Composable
+    fun BasicState() {
+        Button(
+            onClick = { navigateToStateActivity() },
+            modifier = Modifier
+                .padding(all = 8.dp)
+                .fillMaxWidth()
+        ) {
+            Text(text = stringResource(id = R.string.basic_state))
+        }
+    }
     // endregion
 
     // region HelperMethods
@@ -108,6 +122,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun navigateToBasicLayoutScreen() {
         val intent = BasicLayoutsActivity.getIntent(this)
+        startActivity(intent)
+    }
+
+    private fun navigateToStateActivity() {
+        val intent = StateActivity.getIntent(this)
         startActivity(intent)
     }
     // endregion

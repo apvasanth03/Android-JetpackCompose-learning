@@ -77,6 +77,7 @@ dependencies {
     implementation(Deps.composeMaterial)
     implementation(Deps.composeMaterialIcons)
     implementation(Deps.activityCompose)
+    implementation(Deps.viewModelCompose)
 
     // Others
 
